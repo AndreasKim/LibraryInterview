@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Lending.Books.UnitTests</RootNamespace>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="xunit" />
+        <PackageReference Include="FluentAssertions" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+        <PackageReference Include="xunit.runner.visualstudio" />
+        <PackageReference Include="LanguageExt.Core" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\..\Books\Lending.Books.Domain\Lending.Books.Domain.csproj" />
+      <ProjectReference Include="..\Lending.Patrons.Domain\Lending.Patrons.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
